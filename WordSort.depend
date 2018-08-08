@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1533693296 source:c:\users\exoph\documents\c++ projects\wordsort\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
