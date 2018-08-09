@@ -15,10 +15,10 @@ as it would be very frustrating to lose a file containing thousands of words. Ea
 for the program to properly register and sort it. For example a potential input text file should have the following form
 
 avocado</br>
-bannana
-zero
-perk
-dead
-car
+bannana</br>
+zero</br>
+perk</br>
+dead</br>
+car</br>
 
 
