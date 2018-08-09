@@ -8,7 +8,6 @@ int main(int args, char *argv[])
     int wordCounter = 0;
     int buffer;
     int i,j;
-
     FILE *fp;
 
     if (args == 1){
@@ -22,29 +21,18 @@ int main(int args, char *argv[])
         return -1;
 
     }
-    //TODO The following code checks if the user accidentally used the backup as the file to be sorted and
-    //forces the program to close, because otherwise the backup will be made automatically empty.
-
+    /*The following code checks if the user accidentally used the backup as the file to be sorted and
+      forces the program to close, because otherwise the backup will be made automatically empty.
+    */
 
     if (strcmp(getFilenameFromPath(argv[1]),"backup.txt") == 0){
         system("PAUSE");
         return -1;
     }
 
-
-
-
     fp = fopen(argv[1],"r");
 
-    //Count the number of words in the file.
-    while((buffer = fgetc(fp)) != EOF){
-
-        if (buffer == '\n'){
-            wordCounter++;
-        }
-    }
-
-    fseek(fp,0,SEEK_SET);
+    wordCounter = numberOfWordsInFile(fp);
 
     //Create a table to store the words.
     char *words[wordCounter];

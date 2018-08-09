@@ -29,3 +29,27 @@
     buffer[filenameCharCounter] = '\0';
     return buffer;
 }
+
+
+
+int numberOfWordsInFile(FILE * file){
+
+    int counter = 0;
+    int buffer;
+
+    while((buffer = fgetc(file)) != EOF){
+
+        if (buffer == '\n'){
+            counter++;
+        }
+    }
+    fseek(file,0,SEEK_SET);
+    return counter;
+}
+
+
+
+
+
+
+

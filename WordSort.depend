@@ -1,15 +1,15 @@
 # depslib dependency file v1.0
-1533777541 source:c:\users\exoph\documents\c++ projects\wordsort\main.c
+1533779653 source:c:\users\exoph\documents\c++ projects\wordsort\main.c
 	<stdio.h>
 	<stdlib.h>
-	<string.h>
 	"functions.h"
 
 1533694180 source:c:\users\exoph\documents\c++ projects\wordsort\icon.rc
 
-1533778320 c:\users\exoph\documents\c++ projects\wordsort\functions.h
+1533780039 c:\users\exoph\documents\c++ projects\wordsort\functions.h
+	<stdio.h>
 
-1533778328 source:c:\users\exoph\documents\c++ projects\wordsort\functions.c
+1533779867 source:c:\users\exoph\documents\c++ projects\wordsort\functions.c
 	"functions.h"
 	<stdlib.h>
 
