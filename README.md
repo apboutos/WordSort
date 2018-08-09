@@ -14,7 +14,7 @@ done. Before sorting the words and altering your file, WordSort will create a ba
 as it would be very frustrating to lose a file containing thousands of words. Each word must be on separate line in order
 for the program to properly register and sort it. For example a potential input text file should have the following form
 
-avocado
+avocado</br>
 bannana
 zero
 perk
