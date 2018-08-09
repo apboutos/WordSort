@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "functions.h"
 
 int main(int args, char *argv[])
 {
     int wordCounter = 0;
     int buffer;
     int i,j;
-
 
     FILE *fp;
 
@@ -24,11 +24,13 @@ int main(int args, char *argv[])
     }
     //TODO The following code checks if the user accidentally used the backup as the file to be sorted and
     //forces the program to close, because otherwise the backup will be made automatically empty.
-    /*
-    if (strcmp(argv[1],"backup.txt") == 0){
+
+
+    if (strcmp(getFilenameFromPath(argv[1]),"backup.txt") == 0){
         system("PAUSE");
         return -1;
-    }*/
+    }
+
 
 
 
